@@ -41,7 +41,7 @@ resource "aws_security_group" "private-sg" {
 resource "aws_instance" "my-EC2" {
   ami = "ami-01cae1550c0adea9c"
   instance_type = "t2.micro"
-  key_name = "X21218315-AmzLinux"
+  key_name = "x21218315-KManoj-KeyPair-NCI"
   vpc_security_group_ids = [aws_security_group.private-sg.id]
   associate_public_ip_address = true
   root_block_device {
